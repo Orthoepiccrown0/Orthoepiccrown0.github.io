@@ -1,6 +1,6 @@
 ---
 title: "Terms & Conditions"
-layout: none
+layout: default
 permalink: /bento/terms
 ---
 
