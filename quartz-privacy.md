@@ -1,7 +1,7 @@
 ---
-title: "About Me"
-layout: default
-permalink: /about/
+title: "Privacy Policy"
+layout: none
+permalink: /bento/privacy
 ---
 
 **Privacy Policy**

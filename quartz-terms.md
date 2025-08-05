@@ -1,7 +1,7 @@
 ---
-title: "About Me"
-layout: default
-permalink: /about/
+title: "Terms & Conditions"
+layout: none
+permalink: /bento/terms
 ---
 
 **Terms & Conditions**  
