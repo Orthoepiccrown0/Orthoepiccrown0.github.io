@@ -1,6 +1,8 @@
-layout: page
-title: "Privacy Policy"
-permalink: /bento/terms
+---
+title: "About Me"
+layout: default
+permalink: /about/
+---
 
 **Terms & Conditions**  
 
