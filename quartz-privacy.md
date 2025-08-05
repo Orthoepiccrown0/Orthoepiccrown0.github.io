@@ -1,6 +1,6 @@
 ---
 title: "Privacy Policy"
-layout: none
+layout: page
 permalink: /bento/privacy
 ---
 
