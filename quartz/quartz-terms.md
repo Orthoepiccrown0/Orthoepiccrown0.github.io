@@ -6,7 +6,7 @@ permalink: /bento/terms
 
 **Terms & Conditions**  
 
-These terms and conditions apply to the test app (hereby referred to as "Application") for mobile devices that was created by Developer (hereby referred to as "Service Provider") as a Freemium service.
+These terms and conditions apply to the Bento app (hereby referred to as "Application") for mobile devices that was created by Developer (hereby referred to as "Service Provider") as a Freemium service.
 
 Upon downloading or utilizing the Application, you are automatically agreeing to the following terms. It is strongly advised that you thoroughly read and understand these terms prior to using the Application. Unauthorized copying, modification of the Application, any part of the Application, or our trademarks is strictly prohibited. Any attempts to extract the source code of the Application, translate the Application into other languages, or create derivative versions are not permitted. All trademarks, copyrights, database rights, and other intellectual property rights related to the Application remain the property of the Service Provider.
 
@@ -38,6 +38,6 @@ These terms and conditions are effective as of 2025-08-05
 
 **Contact Us**
 
-If you have any questions or suggestions about the Terms and Conditions, please do not hesitate to contact the Service Provider at test@gmail.com.
+If you have any questions or suggestions about the Terms and Conditions, please do not hesitate to contact the Service Provider at dmitro98.98@gmail.com.
 
 * * *
