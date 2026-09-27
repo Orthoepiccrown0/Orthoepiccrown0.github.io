@@ -1,7 +1,7 @@
 en:
   meta:
-    title: Dmytro Zyatikov — Android Developer Résumé
-    description: Android developer with 5+ years of experience across fintech, media, and e-commerce. Explore Dmytro Zyatikov's experience, skills, and education.
+    title: Dmytro Zyatikov | Android Developer CV — Kotlin & Jetpack Compose
+    description: Dmytro Zyatikov's Android developer CV. 5+ years of experience across fintech, media, and e-commerce, with expertise in Kotlin, Jetpack Compose, and accessibility.
   navigation:
     home: Portfolio
     resume: Résumé
@@ -21,6 +21,7 @@ en:
       - label: dmitro98.98@gmail.com
         url: mailto:dmitro98.98@gmail.com
       - label: GitHub
+        kind: github
         url: https://github.com/Orthoepiccrown0
       - label: +39 388 576 1966
         url: tel:+393885761966

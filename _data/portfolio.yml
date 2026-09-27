@@ -1,17 +1,17 @@
 en:
   meta:
-    title: Dmytro Zyatikov — Android developer
-    description: Thoughtful apps for everyday life. Explore Bento, a weekly meal planner and shopping list app, by Android developer Dmytro Zyatikov.
+    title: Dmytro Zyatikov | Android Developer & App Portfolio
+    description: Explore Android apps by Dmytro Zyatikov, a Kotlin and Jetpack Compose developer with 5+ years of experience, including Bento for meal planning and shopping lists.
   name: Dmytro Zyatikov
   role: Android developer
   navigation:
     projects: Projects
-    resume: Résumé
+    resume: Android developer résumé
     skip: Skip to content
   hero:
     eyebrow: Android developer
     title: Thoughtful apps for everyday life.
-    description: I'm Dmytro. I build Android apps that make everyday tasks a little simpler.
+    description: I'm Dmytro Zyatikov, an Android developer building thoughtful apps with Kotlin and Jetpack Compose to make everyday tasks a little simpler.
     action: Discover my work
   projects:
     heading: Selected work

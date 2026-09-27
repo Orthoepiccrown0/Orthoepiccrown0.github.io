@@ -2,6 +2,7 @@
 layout: null
 lang: en
 permalink: /resume/
+sitemap: true
 ---
 {% assign cv = site.data.resume[page.lang] %}
 <!DOCTYPE html>
@@ -9,8 +10,7 @@ permalink: /resume/
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ cv.meta.title | escape }}</title>
-    <meta name="description" content="{{ cv.meta.description | escape }}">
+    {% include seo.html meta=cv.meta profile=cv.profile %}
     <meta name="theme-color" content="#f8f7f2">
     <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/resume.css' | relative_url }}">

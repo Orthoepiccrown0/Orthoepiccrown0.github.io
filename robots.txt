@@ -1,0 +1,8 @@
+---
+layout: null
+permalink: /robots.txt
+---
+User-agent: *
+Allow: /
+
+Sitemap: {{ '/sitemap.xml' | prepend: site.baseurl | prepend: site.production_url }}

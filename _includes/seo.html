@@ -1,0 +1,34 @@
+{%- assign canonical_url = page.url | prepend: site.baseurl | prepend: site.production_url -%}
+<title>{{ include.meta.title | escape }}</title>
+<meta name="description" content="{{ include.meta.description | escape }}">
+<link rel="canonical" href="{{ canonical_url | escape }}">
+<meta property="og:type" content="{% if include.profile %}profile{% else %}website{% endif %}">
+<meta property="og:title" content="{{ include.meta.title | escape }}">
+<meta property="og:description" content="{{ include.meta.description | escape }}">
+<meta property="og:url" content="{{ canonical_url | escape }}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ include.meta.title | escape }}">
+<meta name="twitter:description" content="{{ include.meta.description | escape }}">
+{%- if include.profile -%}
+  {%- assign github = include.profile.contacts | where: 'kind', 'github' | first -%}
+  {%- assign person_id = '/#person' | prepend: site.baseurl | prepend: site.production_url -%}
+  {%- capture profile_json -%}
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "url": {{ canonical_url | jsonify }},
+  "name": {{ include.meta.title | jsonify }},
+  "inLanguage": {{ page.lang | jsonify }},
+  "mainEntity": {
+    "@type": "Person",
+    "@id": {{ person_id | jsonify }},
+    "name": {{ include.profile.name | jsonify }},
+    "jobTitle": {{ include.profile.role | jsonify }},
+    "description": {{ include.profile.summary | jsonify }},
+    "url": {{ canonical_url | jsonify }}{% if github %},
+    "sameAs": [{{ github.url | jsonify }}]{% endif %}
+  }
+}
+  {%- endcapture %}
+<script type="application/ld+json">{{ profile_json | replace: '<', '\u003c' }}</script>
+{%- endif %}
