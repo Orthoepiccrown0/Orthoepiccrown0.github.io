@@ -1,0 +1,30 @@
+en:
+  meta:
+    title: Dmytro Zyatikov — Android developer
+    description: Thoughtful apps for everyday life. Explore Bento, a weekly meal planner and shopping list app, by Android developer Dmytro Zyatikov.
+  name: Dmytro Zyatikov
+  role: Android developer
+  navigation:
+    projects: Projects
+    resume: Résumé
+    skip: Skip to content
+  hero:
+    eyebrow: Android developer
+    title: Thoughtful apps for everyday life.
+    description: I'm Dmytro. I build Android apps that make everyday tasks a little simpler.
+    action: Discover my work
+  projects:
+    heading: Selected work
+    introduction: A little less effort. A little more everyday ease.
+    items:
+      - name: Bento
+        category: Food & everyday life
+        description: Plan your weekly meals and organize your shopping list.
+        action: Explore Bento
+        url: https://bnto.cc
+        illustration: meal-planning
+  contact:
+    heading: Say hello.
+    description: Have a question or some feedback? I'd love to hear from you.
+    email: dmitro98.98@gmail.com
+  footer: Made with care, for everyday life.

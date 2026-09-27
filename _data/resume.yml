@@ -1,0 +1,121 @@
+en:
+  meta:
+    title: Dmytro Zyatikov — Android Developer Résumé
+    description: Android developer with 5+ years of experience across fintech, media, and e-commerce. Explore Dmytro Zyatikov's experience, skills, and education.
+  navigation:
+    home: Portfolio
+    resume: Résumé
+    skip: Skip to résumé
+    label: Résumé sections
+  profile:
+    name: Dmytro Zyatikov
+    role: Android Developer
+    location: Porto Sant'Elpidio, Italy
+    introduction: Building reliable Android experiences, from everyday apps to products used at scale.
+    summary: Android developer with 5+ years of experience designing and delivering mobile applications across fintech, media, and e-commerce. Focused on modern Android architecture, accessible interfaces, performance, and maintainable code.
+    highlights:
+      - Kotlin & Jetpack Compose
+      - Modular architecture
+      - Accessibility
+    contacts:
+      - label: dmitro98.98@gmail.com
+        url: mailto:dmitro98.98@gmail.com
+      - label: GitHub
+        url: https://github.com/Orthoepiccrown0
+      - label: +39 388 576 1966
+        url: tel:+393885761966
+  sections:
+    experience: Experience
+    skills: Technical skills
+    education: Education
+    languages: Languages
+    projects: Independent work
+  experience:
+    - company: Softwave
+      location: Milan, Italy
+      role: Android Software Engineer
+      period: February 2024 – Present
+      assignments:
+        - client: NTT DATA / Sky
+          product: My Sky
+          period: February 2026 – Present
+          bullets:
+            - Contribute to the My Sky Android application, serving an estimated 4–5 million users, with features spanning account, subscription, service, and support journeys.
+            - Drive accessibility improvements through screen-reader semantics, focus management, and DPAD navigation.
+            - Contribute to architecture, code reviews, automated testing, performance optimization, and production issue resolution.
+        - client: Nexi Digital
+          product: Banking Platform as a Service
+          period: January 2025 – January 2026
+          bullets:
+            - Developed reusable, configurable Android solutions for end-to-end mobile banking applications.
+            - Contributed to modular architecture and white-label components supporting multiple banks, brands, and product configurations.
+            - Implemented authentication, account management, payments, and financial services with security, reliability, and maintainability requirements for regulated environments.
+            - Collaborated with distributed teams from technical analysis through production delivery.
+        - client: Reply Live
+          product: E-commerce application
+          period: June 2024 – December 2024
+          bullets:
+            - Developed product discovery, account management, cart, and checkout journeys integrated with backend, commerce, and payment services.
+            - Improved application quality through reusable components, code reviews, testing, and performance optimization.
+        - client: IrisCube
+          product: Fintech application
+          period: February 2024 – May 2024
+          bullets:
+            - Developed and maintained an Italian fintech application serving more than 5 million users.
+            - Delivered financial features involving authentication, sensitive customer data, backend integrations, and complex transaction flows.
+            - Applied security-focused practices to data handling, session management, error handling, and critical user journeys.
+            - Improved screen-reader support, semantic structure, focus handling, and accessible interactions, while contributing to architecture, testing, performance, and production stability.
+    - company: AppLoad
+      location: Corridonia, Italy
+      role: Android Developer
+      period: September 2021 – February 2024
+      bullets:
+        - Developed and maintained Android applications with RESTful API integrations, MVVM, and Clean Architecture.
+        - Adopted Jetpack Compose for UI development, Hilt for dependency injection, and WorkManager for background tasks.
+        - Managed a development team, delegated tasks, monitored progress, and coordinated delivery against project deadlines.
+        - Supported collaboration, code quality, and team development.
+    - company: AppLoad
+      location: Corridonia, Italy
+      role: Android Developer Intern
+      period: June 2021 – September 2021
+      bullets:
+        - Gained hands-on experience developing and maintaining Android applications using REST services and the MVVM architectural pattern.
+  skills:
+    - category: Languages & interface
+      items: [Kotlin, Java, Jetpack Compose, XML, Material Design, Android SDK, Android Studio]
+    - category: Architecture & concurrency
+      items: [MVVM, MVI, Clean Architecture, Modularization, Offline-first architecture, Coroutines, Flows, Hilt, WorkManager]
+    - category: Data & networking
+      items: [Room, SQLite, MongoDB, Realm, Retrofit, OkHttp, Ktor, Gson, MQTT, JWT, OAuth2]
+    - category: Media & services
+      items: [ExoPlayer, CameraX, Coil, Glide, Lottie, Firebase, Remote Config, Google Analytics, Firebase Crashlytics]
+    - category: Quality & delivery
+      items: [Accessibility, DPAD navigation, JUnit, Gradle, Fastlane, CI/CD, Git, Jira, Confluence]
+  education:
+    - subject: Computer Science
+      institution: University of Camerino
+      location: Camerino, Italy
+      period: September 2018 – June 2023
+      url: https://www.unicam.it
+    - subject: Computer Science
+      institution: I.T.T. Montani
+      location: Fermo, Italy
+      period: September 2015 – July 2018
+  languages:
+    - name: Ukrainian
+      level: Native
+      detail: Mother tongue
+    - name: Italian
+      level: C2
+      detail: Listening, reading, writing, and spoken production and interaction
+    - name: English
+      level: B2–C1
+      detail: C1 listening and reading; B2 writing and spoken production and interaction
+  project:
+    name: Bento
+    description: A weekly meal planner and shopping list app, making everyday planning a little simpler.
+    action: Explore Bento
+    url: https://bnto.cc
+  footer:
+    note: Experience and qualifications based on my July 2026 CV.
+    action: Get in touch

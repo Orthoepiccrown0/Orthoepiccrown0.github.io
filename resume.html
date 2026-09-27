@@ -1,0 +1,116 @@
+---
+layout: null
+lang: en
+permalink: /resume/
+---
+{% assign cv = site.data.resume[page.lang] %}
+<!DOCTYPE html>
+<html lang="{{ page.lang | escape }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ cv.meta.title | escape }}</title>
+    <meta name="description" content="{{ cv.meta.description | escape }}">
+    <meta name="theme-color" content="#f8f7f2">
+    <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/resume.css' | relative_url }}">
+  </head>
+  <body class="resume-page">
+    <a class="skip-link" href="#main">{{ cv.navigation.skip | escape }}</a>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="resume-home" href="{{ '/' | relative_url }}"><span aria-hidden="true">←</span> {{ cv.navigation.home | escape }}</a>
+        <span class="resume-page-label">{{ cv.navigation.resume | escape }}</span>
+      </header>
+      <main id="main" tabindex="-1">
+        <section class="resume-intro" aria-labelledby="resume-name">
+          <p class="eyebrow">{{ cv.profile.role | escape }}</p>
+          <h1 id="resume-name">{{ cv.profile.name | escape }}</h1>
+          <p class="resume-statement">{{ cv.profile.introduction | escape }}</p>
+          <p class="resume-summary">{{ cv.profile.summary | escape }}</p>
+          <ul class="resume-highlights">
+            {% for highlight in cv.profile.highlights %}<li>{{ highlight | escape }}</li>{% endfor %}
+          </ul>
+          <div class="resume-contact-row">
+            <p class="resume-location">{{ cv.profile.location | escape }}</p>
+            <ul class="resume-contacts">
+              {% for contact in cv.profile.contacts %}
+              <li><a href="{{ contact.url | escape }}">{{ contact.label | escape }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </section>
+
+        <nav class="resume-section-nav" aria-label="{{ cv.navigation.label | escape }}">
+          {% for section in cv.sections %}<a href="#{{ section[0] }}">{{ section[1] | escape }}</a>{% endfor %}
+        </nav>
+
+        <section class="resume-section" id="experience" aria-labelledby="experience-title">
+          <div class="resume-section-label"><span aria-hidden="true">01</span><h2 id="experience-title">{{ cv.sections.experience | escape }}</h2></div>
+          <div class="resume-section-content">
+            {% for job in cv.experience %}
+            <article class="resume-job">
+              <header class="resume-entry-header">
+                <div><h3>{{ job.role | escape }}</h3><p class="resume-employer">{{ job.company | escape }} <span>· {{ job.location | escape }}</span></p></div>
+                <p class="resume-period">{{ job.period | escape }}</p>
+              </header>
+              {% if job.assignments %}
+              <div class="resume-assignments">
+                {% for assignment in job.assignments %}
+                <section class="resume-assignment" aria-labelledby="assignment-{{ forloop.index }}">
+                  <div class="resume-assignment-heading"><h4 id="assignment-{{ forloop.index }}">{{ assignment.client | escape }}</h4><p class="resume-period">{{ assignment.period | escape }}</p></div>
+                  <p class="resume-product">{{ assignment.product | escape }}</p>
+                  <ul class="resume-bullets">{% for bullet in assignment.bullets %}<li>{{ bullet | escape }}</li>{% endfor %}</ul>
+                </section>
+                {% endfor %}
+              </div>
+              {% endif %}
+              {% if job.bullets %}<ul class="resume-bullets">{% for bullet in job.bullets %}<li>{{ bullet | escape }}</li>{% endfor %}</ul>{% endif %}
+            </article>
+            {% endfor %}
+          </div>
+        </section>
+
+        <section class="resume-section" id="skills" aria-labelledby="skills-title">
+          <div class="resume-section-label"><span aria-hidden="true">02</span><h2 id="skills-title">{{ cv.sections.skills | escape }}</h2></div>
+          <div class="resume-section-content resume-skill-groups">
+            {% for group in cv.skills %}
+            <div class="resume-skill-group"><h3>{{ group.category | escape }}</h3><ul>{% for skill in group.items %}<li>{{ skill | escape }}</li>{% endfor %}</ul></div>
+            {% endfor %}
+          </div>
+        </section>
+
+        <section class="resume-section" id="education" aria-labelledby="education-title">
+          <div class="resume-section-label"><span aria-hidden="true">03</span><h2 id="education-title">{{ cv.sections.education | escape }}</h2></div>
+          <div class="resume-section-content">
+            {% for study in cv.education %}
+            <article class="resume-study">
+              <div class="resume-entry-header"><h3>{{ study.subject | escape }}</h3><p class="resume-period">{{ study.period | escape }}</p></div>
+              <p class="resume-institution">{% if study.url %}<a href="{{ study.url | escape }}">{{ study.institution | escape }}</a>{% else %}{{ study.institution | escape }}{% endif %}</p>
+              <p class="resume-place">{{ study.location | escape }}</p>
+            </article>
+            {% endfor %}
+          </div>
+        </section>
+
+        <section class="resume-section" id="languages" aria-labelledby="languages-title">
+          <div class="resume-section-label"><span aria-hidden="true">04</span><h2 id="languages-title">{{ cv.sections.languages | escape }}</h2></div>
+          <div class="resume-section-content resume-languages">
+            {% for language in cv.languages %}
+            <div><h3>{{ language.name | escape }} <span>{{ language.level | escape }}</span></h3><p>{{ language.detail | escape }}</p></div>
+            {% endfor %}
+          </div>
+        </section>
+
+        <section class="resume-section" id="projects" aria-labelledby="projects-title">
+          <div class="resume-section-label"><span aria-hidden="true">05</span><h2 id="projects-title">{{ cv.sections.projects | escape }}</h2></div>
+          <div class="resume-section-content resume-project">
+            <div><h3>{{ cv.project.name | escape }}</h3><p>{{ cv.project.description | escape }}</p></div>
+            <a class="text-link" href="{{ cv.project.url | escape }}">{{ cv.project.action | escape }} <span aria-hidden="true">↗</span></a>
+          </div>
+        </section>
+      </main>
+      <footer class="site-footer resume-footer"><p>{{ cv.footer.note | escape }}</p><a href="{{ cv.profile.contacts[0].url | escape }}">{{ cv.footer.action | escape }} <span aria-hidden="true">↗</span></a></footer>
+    </div>
+  </body>
+</html>
