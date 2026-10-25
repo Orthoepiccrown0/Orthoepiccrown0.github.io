@@ -23,6 +23,12 @@ en:
         action: Explore Bento
         url: https://bento.zyatikov.cc
         illustration: meal-planning
+      - name: Snello
+        category: Photos & videos
+        description: Make photos and videos smaller, ready to share. On-device compression keeps your originals safe.
+        action: Explore Snello
+        url: /snello/
+        illustration: compression
   contact:
     heading: Say hello.
     description: Have a question or some feedback? I'd love to hear from you.

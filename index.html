@@ -80,12 +80,19 @@ sitemap: true
                   <path d="m401 92-6 18" stroke="#6e8b5b" stroke-width="3" stroke-linecap="round"/>
                 </svg>
               </div>
+              {% elsif project.illustration == 'compression' %}
+              <div class="project-art project-art-snello">
+                <img src="{{ '/assets/images/snello/compress.png' | relative_url }}" width="1080" height="2410" alt="Snello’s photo and video compression screen" loading="lazy" decoding="async">
+              </div>
               {% endif %}
               <div class="project-details">
                 <p class="eyebrow">{{ project.category | escape }}</p>
                 <h3 id="project-{{ forloop.index }}">{{ project.name | escape }}</h3>
                 <p class="project-description">{{ project.description | escape }}</p>
-                <a class="button" href="{{ project.url | escape }}">{{ project.action | escape }} <span aria-hidden="true">↗</span></a>
+                {% assign project_url = project.url %}
+                {% assign first_character = project_url | slice: 0 %}
+                {% if first_character == '/' %}{% assign project_url = project_url | relative_url %}{% endif %}
+                <a class="button" href="{{ project_url | escape }}">{{ project.action | escape }} <span aria-hidden="true">↗</span></a>
               </div>
             </article>
             {% endfor %}
