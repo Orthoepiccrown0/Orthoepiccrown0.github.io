@@ -38,6 +38,9 @@ h1 { max-width: 820px; margin-top: 1.6rem; font-size: clamp(3rem, 7vw, 5.1rem); 
 .text-link { display: inline-flex; align-items: center; gap: 1rem; min-height: 44px; font-size: .9rem; font-weight: 600; color: var(--green); }
 .hero .text-link { margin-top: 1.75rem; }
 .text-link:hover { text-decoration-thickness: 2px; }
+.background { padding-bottom: clamp(3rem, 6vw, 4.5rem); }
+.background-description { max-width: 720px; color: var(--muted); font-size: 1rem; line-height: 1.75; }
+.background-links { display: flex; flex-wrap: wrap; gap: .5rem 2rem; margin-top: 1rem; }
 .projects { scroll-margin-top: 2rem; }
 .section-heading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .75rem 2rem; margin-bottom: 1.5rem; }
 .section-heading h2 { font-size: 1.05rem; font-weight: 650; letter-spacing: -.02em; }

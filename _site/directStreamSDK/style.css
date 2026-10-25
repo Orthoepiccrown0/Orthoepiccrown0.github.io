@@ -1,0 +1,68 @@
+/* Product layouts share the portfolio's color, type, spacing and controls. */
+.directstream-page .identity { text-decoration: none; }
+.directstream-page img { display: block; width: 100%; height: auto; }
+.directstream-page figure { margin: 0; }
+.ds-hero { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 2.5rem; padding-block: 5rem; }
+.ds-hero h1 { font-size: clamp(2.75rem, 5.5vw, 4.5rem); }
+.ds-intro { max-width: 490px; margin-top: 1.75rem; color: var(--muted); font-size: 1.1rem; line-height: 1.75; }
+.ds-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; margin-top: 1.75rem; }
+.ds-actions .button { margin-top: 0; }
+.ds-note { margin-top: 1.5rem; color: var(--muted); font-size: .75rem; line-height: 1.7; }
+.ds-hero-art { overflow: hidden; padding: 1rem 0 2rem; background: #eef0e5; border: 1px solid var(--line); border-radius: 1.5rem; }
+.ds-hero-art figcaption { color: var(--green); text-align: center; font-size: .875rem; font-weight: 550; }
+.ds-benefits { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; padding-block: 2rem 4.5rem; border-top: 1px solid var(--line); }
+.ds-number { display: block; margin-bottom: 1rem; color: var(--green); font-size: .75rem; }
+.ds-benefits h2 { font-size: 1.125rem; font-weight: 650; letter-spacing: -.02em; }
+.ds-benefits p, .ds-flow-steps p { margin-top: .75rem; color: var(--muted); font-size: .9rem; line-height: 1.75; }
+.ds-section-intro h2, .ds-install h2 { margin-top: 1.25rem; font-size: clamp(2rem, 4vw, 3rem); font-weight: 550; line-height: 1.15; letter-spacing: -.04em; text-wrap: balance; }
+.ds-section-intro > p:last-child, .ds-install > div > p:not(.eyebrow) { max-width: 650px; margin-top: 1.5rem; color: var(--muted); font-size: 1rem; line-height: 1.75; }
+.ds-codecs { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 2.5rem 3rem; padding: 3rem; background: #eef0e5; border: 1px solid var(--line); border-radius: 1.5rem; }
+.ds-codec-panel { padding: 1.5rem; background: #fffefb; border: 1px solid var(--line); border-radius: 1rem; }
+.ds-codec-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .75rem; margin: 0; padding: 0; list-style: none; }
+.ds-codec-grid li { padding: 1rem; background: #e8eddf; border-radius: .75rem; }
+.ds-codec-grid li:first-child { background: #d0ddbb; }
+.ds-codec-grid li:nth-child(2) { background: #f1e3c8; }
+.ds-codec-grid span { display: block; color: var(--green); font-size: .65rem; margin-bottom: .65rem; }
+.ds-codec-grid strong { font-size: 1.8rem; font-weight: 550; letter-spacing: -.035em; }
+.ds-panel-caption { margin-top: .75rem; color: var(--muted); font-size: .7rem; line-height: 1.5; }
+.ds-codec-detail { display: flex; align-items: center; gap: .65rem; padding-block: 1.5rem 1rem; font-size: .85rem; font-weight: 600; line-height: 1.5; }
+.ds-small { color: var(--muted); font-size: .8rem; line-height: 1.75; }
+.ds-codec-footer { grid-column: 1 / -1; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem 2rem; border-top: 1px solid var(--line); padding-top: 1.5rem; }
+.ds-codec-footer > p { max-width: 500px; color: var(--muted); font-size: .875rem; line-height: 1.7; }
+.ds-flow { padding-block: 5rem; scroll-margin-top: 2rem; }
+.ds-diagram { margin-top: 2.5rem !important; }
+.ds-diagram img { border: 1px solid var(--line); border-radius: 1.5rem; }
+.ds-diagram figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: .5rem 1.5rem; margin-top: .75rem; color: var(--muted); font-size: .75rem; line-height: 1.7; }
+.ds-diagram figcaption a { display: inline-flex; align-items: center; min-height: 44px; }
+.ds-flow-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; padding: 0; margin: 2rem 0 0; list-style: none; counter-reset: steps; }
+.ds-flow-steps li { counter-increment: steps; }
+.ds-flow-steps li::before { content: "0" counter(steps) " /"; display: block; color: var(--green); margin-bottom: 1rem; font-size: .75rem; }
+.ds-flow-steps h3 { font-size: 1.1rem; font-weight: 650; letter-spacing: -.02em; }
+.ds-install { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 3rem; padding-block: 3rem; border-block: 1px solid var(--line); }
+.ds-package { min-width: 0; padding: 2rem; border: 1px solid var(--line); border-radius: 1.5rem; background: #fffefb; }
+.ds-package-label { color: var(--green); font-size: .75rem; font-weight: 650; letter-spacing: .09em; text-transform: uppercase; }
+.ds-package h3 { margin-top: 1rem; font-size: 2rem; font-weight: 550; letter-spacing: -.04em; }
+.ds-coordinate { margin-top: .5rem; font-family: ui-monospace, monospace; font-size: .75rem; color: var(--muted); overflow-wrap: anywhere; line-height: 1.6; }
+.ds-package ul { list-style: none; padding: 0; margin: 1.5rem 0; }
+.ds-package li { padding-block: .8rem; border-top: 1px solid var(--line); font-size: .9rem; }
+.ds-package li::before { content: "↳"; color: var(--green); margin-right: .75rem; }
+.ds-closing { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1.5rem; padding-block: 4rem; }
+.ds-closing h2 { font-size: 1.75rem; font-weight: 550; letter-spacing: -.035em; }
+.ds-closing p { margin-top: .75rem; color: var(--muted); font-size: .95rem; line-height: 1.7; }
+@media (max-width: 900px) {
+  .ds-hero { gap: 1.5rem; }
+  .ds-codecs { padding: 2rem; gap: 2rem; }
+  .ds-package { padding: 1.5rem; }
+}
+@media (max-width: 700px) {
+  .ds-hero, .ds-codecs, .ds-install { grid-template-columns: 1fr; }
+  .ds-hero { padding-block: 3rem; gap: 2rem; }
+  .ds-hero-art { width: min(100%, 450px); justify-self: center; }
+  .ds-benefits, .ds-flow-steps { grid-template-columns: 1fr; gap: 1.75rem; }
+  .ds-benefits { padding-bottom: 3rem; }
+  .ds-codecs { padding: 1.5rem; }
+  .ds-codec-panel { padding: 1rem; }
+  .ds-flow { padding-block: 3rem; }
+  .ds-install { gap: 2rem; }
+  .ds-closing { padding-block: 3rem; }
+}

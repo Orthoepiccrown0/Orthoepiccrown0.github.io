@@ -4,12 +4,14 @@ lang: en
 sitemap: true
 ---
 {% assign copy = site.data.portfolio[page.lang] %}
+{% assign profile = site.data.resume[page.lang].profile %}
+{% assign github = profile.contacts | where: 'kind', 'github' | first %}
 <!DOCTYPE html>
 <html lang="{{ page.lang | escape }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% include seo.html meta=copy.meta %}
+    {% include seo.html meta=copy.meta profile=profile homepage=true %}
     <meta name="theme-color" content="#f8f7f2">
     <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
   </head>
@@ -36,6 +38,17 @@ sitemap: true
           <h1 id="hero-title">{{ copy.hero.title | escape }}</h1>
           <p class="hero-description">{{ copy.hero.description | escape }}</p>
           <a class="text-link" href="#projects">{{ copy.hero.action | escape }} <span aria-hidden="true">↓</span></a>
+        </section>
+
+        <section class="background" aria-labelledby="background-title">
+          <div class="section-heading">
+            <h2 id="background-title">{{ copy.background.heading | escape }}</h2>
+          </div>
+          <p class="background-description">{{ copy.background.description | escape }}</p>
+          <div class="background-links">
+            <a class="text-link" href="{{ '/resume/' | relative_url }}">{{ copy.background.resume | escape }} <span aria-hidden="true">↗</span></a>
+            {% if github %}<a class="text-link" href="{{ github.url | escape }}">{{ copy.background.github | escape }} <span aria-hidden="true">↗</span></a>{% endif %}
+          </div>
         </section>
 
         <section class="projects" id="projects" aria-labelledby="projects-title">

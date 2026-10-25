@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>/</loc></url>
-  <url><loc>/resume/</loc></url>
+  <url><loc>https://zyatikov.cc/</loc></url>
+  <url><loc>https://zyatikov.cc/bento/privacy</loc></url>
+  <url><loc>https://zyatikov.cc/bento/terms</loc></url>
+  <url><loc>https://zyatikov.cc/directStreamSDK/</loc></url>
+  <url><loc>https://zyatikov.cc/resume/</loc></url>
+  <url><loc>https://zyatikov.cc/snello/</loc></url>
+  <url><loc>https://zyatikov.cc/snello/privacy</loc></url>
+  <url><loc>https://zyatikov.cc/snello/terms</loc></url>
 </urlset>

@@ -1,0 +1,53 @@
+/* Snello layouts build on the shared portfolio typography, colors and controls. */
+.snello-page .identity { text-decoration: none; }
+.snello-page img { display: block; max-width: 100%; height: auto; }
+.snello-page figure { margin: 0; }
+.snello-page .hero { display: grid; grid-template-columns: 1.2fr 1fr; align-items: center; gap: 3rem; max-width: none; padding-block: 4.5rem; }
+.snello-page h1 { font-size: clamp(2.75rem, 5.5vw, 4.5rem); }
+.intro { max-width: 490px; margin-top: 1.75rem; color: var(--muted); font-size: 1.125rem; line-height: 1.75; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1.5rem; margin-top: 1.75rem; }
+.snello-page .actions .button, .snello-page .actions .text-link { margin-top: 0; }
+.compatibility { margin-top: 1.5rem; color: var(--muted); font-size: .75rem; line-height: 1.7; }
+.hero-art { position: relative; display: grid; place-items: center; min-width: 0; padding: 2.5rem 2rem; background: #eef0e5; border: 1px solid var(--line); border-radius: 1.5rem; }
+.phone { width: 210px; max-width: 100%; padding: 5px; overflow: hidden; border: 1px solid var(--line); border-radius: 1.5rem; background: var(--ink); box-shadow: 0 16px 32px #242d2514; }
+.phone img { width: 100%; border-radius: 1.2rem; }
+.art-label { position: absolute; left: -1rem; bottom: 4rem; padding: 1rem 1.25rem; border: 1px solid var(--line); border-radius: .75rem; background: #fffefb; font-size: .95rem; font-weight: 550; line-height: 1.5; }
+.art-note { position: absolute; right: .75rem; top: 2rem; color: var(--muted); font-size: .625rem; letter-spacing: .09em; writing-mode: vertical-rl; text-transform: uppercase; }
+.benefits { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; padding-block: 2rem 3rem; border-top: 1px solid var(--line); }
+.benefit-number { display: block; margin-bottom: 1rem; color: var(--green); font-size: .75rem; }
+.benefits h2 { font-size: 1.125rem; font-weight: 650; letter-spacing: -.02em; }
+.benefits p { margin-top: .75rem; color: var(--muted); font-size: .9rem; line-height: 1.75; }
+.details { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 3rem; padding: 3rem; border: 1px solid var(--line); border-radius: 1.5rem; background: #eef0e5; scroll-margin-top: 2rem; }
+.screens { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.screens figure:nth-child(2) { margin-top: 3rem; }
+.screens .phone { width: 100%; padding: 4px; border-radius: 1.1rem; }
+.screens .phone img { border-radius: .85rem; }
+.screens figcaption { margin-top: 1rem; color: var(--muted); font-size: .75rem; line-height: 1.6; text-align: center; }
+.detail-copy h2, .engineering h2 { margin-top: 1.25rem; font-size: clamp(1.85rem, 3.5vw, 2.5rem); font-weight: 550; line-height: 1.15; letter-spacing: -.04em; text-wrap: balance; }
+.detail-copy > p:not(.eyebrow) { margin-top: 1.5rem; color: var(--muted); font-size: .95rem; line-height: 1.75; }
+.detail-list { list-style: none; padding: 0; margin: 1.5rem 0 0; }
+.detail-list li { display: flex; align-items: baseline; gap: .75rem; padding-block: .85rem; border-top: 1px solid var(--line); font-size: .875rem; line-height: 1.6; }
+.detail-list span { color: var(--green); }
+.engineering { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; padding-block: 4.5rem; }
+.engineering-copy > p { color: var(--muted); font-size: .95rem; line-height: 1.75; }
+.tags { display: flex; flex-wrap: wrap; gap: .5rem; list-style: none; padding: 0; margin: 1.5rem 0; }
+.tags li { padding: .5rem .75rem; border: 1px solid var(--line); border-radius: .65rem; font-size: .75rem; }
+.footer-links { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; }
+.footer-links a { display: inline-flex; align-items: center; min-height: 44px; }
+.snello-page .site-footer { align-items: center; }
+
+@media (max-width: 900px) {
+  .snello-page .hero { gap: 2rem; }
+  .details { gap: 2rem; padding: 2rem; }
+}
+@media (max-width: 700px) {
+  .snello-page .hero { grid-template-columns: 1fr; padding-block: 3rem; gap: 2.5rem; }
+  .hero-art { width: min(100%, 400px); justify-self: center; }
+  .art-label { left: .75rem; }
+  .benefits { grid-template-columns: 1fr; gap: 1.75rem; }
+  .benefit-number { margin-bottom: .5rem; }
+  .details { grid-template-columns: 1fr; padding: 1.5rem; }
+  .detail-copy { grid-row: 1; }
+  .screens { width: min(100%, 400px); justify-self: center; }
+  .engineering { grid-template-columns: 1fr; gap: 1.5rem; padding-block: 3.5rem; }
+}
