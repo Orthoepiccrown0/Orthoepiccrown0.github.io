@@ -1,7 +1,7 @@
 en:
   meta:
     title: Dmytro Zyatikov | Android Developer & App Portfolio
-    description: Explore Android apps by Dmytro Zyatikov, a Kotlin and Jetpack Compose developer with 5+ years of experience, including Bento for meal planning and shopping lists.
+    description: Explore Android projects by Dmytro Zyatikov, a Kotlin and Jetpack Compose developer with 5+ years of experience. Discover Bento, Snello, and DirectStream SDK.
   name: Dmytro Zyatikov
   role: Android developer
   navigation:
@@ -29,6 +29,12 @@ en:
         action: Explore Snello
         url: /snello/
         illustration: compression
+      - name: DirectStream SDK
+        category: Developer tools & video calls
+        description: Bring one-to-one audio and video calls to your Android app, with ready-made Compose screens and device-aware codecs.
+        action: Explore DirectStream
+        url: /directStreamSDK/
+        illustration: video-calls
   contact:
     heading: Say hello.
     description: Have a question or some feedback? I'd love to hear from you.

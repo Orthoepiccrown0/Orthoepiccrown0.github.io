@@ -110,6 +110,10 @@ sitemap: true
                   <path d="M355 64v16m-8-8h16M450 210v12m-6-6h12" stroke="#789566" stroke-width="3" stroke-linecap="round"/>
                 </svg>
               </div>
+              {% elsif project.illustration == 'video-calls' %}
+              <div class="project-art" aria-hidden="true">
+                <img src="{{ '/directStreamSDK/assets/video-calls.svg' | relative_url }}" width="640" height="480" alt="" loading="lazy" decoding="async">
+              </div>
               {% endif %}
               <div class="project-details">
                 <p class="eyebrow">{{ project.category | escape }}</p>

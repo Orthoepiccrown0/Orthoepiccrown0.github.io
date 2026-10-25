@@ -1,0 +1,115 @@
+---
+layout: null
+lang: en
+sitemap: true
+title: DirectStream SDK — Bring video calls to your Android app
+description: One-to-one Android audio and video calls with ready-made Compose screens, Maven Central installation, and device-aware VP8, H.264, VP9 and AV1 negotiation.
+permalink: /directStreamSDK/
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7f2">
+  {% include seo.html meta=page %}
+  <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/directStreamSDK/style.css' | relative_url }}">
+</head>
+<body class="directstream-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="identity" href="{{ '/' | relative_url }}" aria-label="Dmytro Zyatikov — home">
+        <span class="identity-mark" aria-hidden="true">dz<span>.</span></span>
+        <span><span class="identity-name">{{ site.data.portfolio.en.name | escape }}</span><span class="identity-role">{{ site.data.portfolio.en.role | escape }}</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="nav-link" href="{{ '/' | relative_url }}#projects">All projects <span aria-hidden="true">↗</span></a>
+        <a class="nav-link" href="#how-it-works">How it works</a>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="ds-hero" aria-labelledby="hero-title">
+        <div>
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> DirectStream SDK · Android</p>
+          <h1 id="hero-title">Your app.<br>A little more human.</h1>
+          <p class="ds-intro">Bring one-to-one video calls to your Android app. DirectStream takes care of the call experience, from the first ring to the last goodbye, so a small team can stay focused on its app.</p>
+          <div class="ds-actions">
+            <a class="button" href="https://github.com/Orthoepiccrown0/webrtc-android">Explore the SDK <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#how-it-works">See how it connects <span aria-hidden="true">↓</span></a>
+          </div>
+          <p class="ds-note">Android 11+ · Kotlin · Jetpack Compose · Apache 2.0</p>
+        </div>
+        <figure class="ds-hero-art">
+          <img src="{{ '/directStreamSDK/assets/video-calls.svg' | relative_url }}" width="640" height="480" alt="Two people connected in a one-to-one video call, illustrated as two linked Android screens." fetchpriority="high">
+          <figcaption>Closer together. Less to build.</figcaption>
+        </figure>
+      </section>
+
+      <section class="ds-benefits" aria-label="Built for your next calling feature">
+        <article><span class="ds-number" aria-hidden="true">01 /</span><h2>A complete call experience.</h2><p>Incoming, waiting, and in-call Compose screens are ready to use. Audio routing, mute, camera controls, and the call lifecycle live in the SDK.</p></article>
+        <article><span class="ds-number" aria-hidden="true">02 /</span><h2>Made for your app.</h2><p>Use your Material theme, replace the call content, or build a custom interface with observable state and focused APIs. Your accounts and contacts stay yours to design.</p></article>
+        <article><span class="ds-number" aria-hidden="true">03 /</span><h2>More than a video view.</h2><p>Explicit call acceptance, incoming alerts, and Android system call integration connect the experience from invitation through hangup.</p></article>
+      </section>
+
+      <section class="ds-codecs" aria-labelledby="codecs-title">
+        <div class="ds-section-intro">
+          <p class="eyebrow">Device-aware by default</p>
+          <h2 id="codecs-title">Different devices.<br>A common language.</h2>
+          <p>VP8, H.264, VP9, and AV1 negotiation is built in. Auto mode checks what both devices can encode and decode, then prioritizes a mutually hardware-supported codec.</p>
+        </div>
+        <div class="ds-codec-panel">
+          <ul class="ds-codec-grid" aria-label="Video codec families">
+            <li><span>01</span><strong>AV1</strong></li><li><span>02</span><strong>H.264</strong></li><li><span>03</span><strong>VP9</strong></li><li><span>04</span><strong>VP8</strong></li>
+          </ul>
+          <p class="ds-panel-caption">Auto priority when both devices report hardware support</p>
+          <div class="ds-codec-detail"><span class="status-dot" aria-hidden="true"></span><p>Compatible first. Hardware-aware when available.</p></div>
+          <p class="ds-small">Availability comes from the bundled WebRTC engine on each device. Without a shared hardware option, Auto uses a compatible fallback. Software implementations may be used where exposed; every codec is not available on every device.</p>
+        </div>
+        <div class="ds-codec-footer"><p>Need more control? Prefer a codec or require one explicitly. Inspect the negotiated codec in diagnostics. Audio prefers Opus.</p><a class="text-link" href="https://github.com/Orthoepiccrown0/webrtc-android/blob/main/docs/CODECS.md">Explore codec support <span aria-hidden="true">↗</span></a></div>
+      </section>
+
+      <section id="how-it-works" class="ds-flow" aria-labelledby="flow-title">
+        <div class="ds-section-intro">
+          <p class="eyebrow">From invitation to conversation</p>
+          <h2 id="flow-title">A clear path between two people.</h2>
+          <p>The default provider coordinates identity, approval, and signaling in the cloud. Once a call is accepted, WebRTC connects the media between devices, directly when possible.</p>
+        </div>
+        <figure class="ds-diagram">
+          <a href="{{ '/directStreamSDK/assets/call-flow.svg' | relative_url }}" aria-label="Open the full-size DirectStream call flow diagram">
+            <img src="{{ '/directStreamSDK/assets/call-flow.svg' | relative_url }}" width="960" height="650" alt="Default provider call flow: Android apps use DirectStream SDK; Cloudflare Worker and D1 handle approval, Firebase handles identity, signaling and push hints; WebRTC carries direct media or uses an optional TURN relay." loading="lazy" decoding="async">
+          </a>
+          <figcaption>Coordination and media take separate paths. <a href="{{ '/directStreamSDK/assets/call-flow.svg' | relative_url }}">Open full-size diagram <span aria-hidden="true">↗</span></a></figcaption>
+        </figure>
+        <ol class="ds-flow-steps">
+          <li><h3>Invite &amp; accept</h3><p>Your app selects the recipient. The provider authorizes the request, and the other person chooses whether to accept.</p></li>
+          <li><h3>Find common ground</h3><p>The SDK exchanges signaling and codec capabilities. Both devices agree on a compatible media format before capture starts.</p></li>
+          <li><h3>Connect &amp; talk</h3><p>ICE and STUN help find a direct route. A configured TURN relay can carry media when restrictive networks prevent a direct connection.</p></li>
+        </ol>
+      </section>
+
+      <section class="ds-install" aria-labelledby="install-title">
+        <div>
+          <p class="eyebrow">Easy to bring into your project</p>
+          <h2 id="install-title">One SDK dependency.<br>The pieces, together.</h2>
+          <p>The Maven Central starter brings the runtime, Compose call UI, and default Firebase provider together. Add DirectStream to an existing Android app without assembling each SDK module yourself.</p>
+          <a class="button" href="https://central.sonatype.com/artifact/io.github.orthoepiccrown0/directstream">View on Maven Central <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="ds-package">
+          <span class="ds-package-label">Maven Central</span>
+          <h3>DirectStream</h3>
+          <p class="ds-coordinate">io.github.orthoepiccrown0:directstream</p>
+          <ul><li>Call runtime &amp; WebRTC</li><li>Ready-made Compose screens</li><li>Default Firebase provider</li></ul>
+          <p class="ds-small">Your host app supplies Compose and FCM dependencies. The default provider requires your Firebase and Cloudflare services; TURN is configured separately. The SDK also supports custom providers.</p>
+        </div>
+      </section>
+      <section class="ds-closing" aria-labelledby="closing-title">
+        <div><h2 id="closing-title">Make room for a conversation.</h2><p>A calling feature for the app you’re already building.</p></div>
+        <a class="text-link" href="https://github.com/Orthoepiccrown0/webrtc-android">Discover DirectStream <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+    <footer class="site-footer"><span>DirectStream SDK · By {{ site.data.portfolio.en.name | escape }}</span><a href="https://github.com/Orthoepiccrown0/webrtc-android">Source &amp; documentation <span aria-hidden="true">↗</span></a></footer>
+  </div>
+</body>
+</html>
