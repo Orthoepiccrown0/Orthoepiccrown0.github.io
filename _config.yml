@@ -1,8 +1,8 @@
 theme: jekyll-theme-slate
-url: https://public.orthoepiccrown.org
+url: https://zyatikov.cc
 baseurl: ""
 # Jekyll serve can replace url with localhost; search metadata stays on this origin.
-production_url: https://public.orthoepiccrown.org
+production_url: https://zyatikov.cc
 exclude:
   - README.md
   - _site
